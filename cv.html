@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Ameen Mohamed Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Arabic:wght@400&display=swap" rel="stylesheet" />
+<style>
+  @page { size: A4; margin: 9mm 12mm 8mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --ink: #1f2328; --muted: #4a4f57; --line: #1f2328; --accent: #1a3c6e; }
+  html, body { background: #fff; }
+  body {
+    font-family: "Source Sans 3", "Noto Sans Arabic", sans-serif;
+    font-size: 9.1pt;
+    line-height: 1.25;
+    color: var(--ink);
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  header { text-align: center; margin-bottom: 9pt; }
+  h1 { font-size: 21pt; font-weight: 700; line-height: 1.1; }
+  .role { font-size: 13.5pt; font-style: italic; color: var(--accent); margin: 2pt 0 6pt; }
+  .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 3pt 13pt; font-size: 9.2pt; }
+  .contact a, .contact span { display: inline-flex; align-items: center; gap: 4pt; }
+  .contact svg { width: 9pt; height: 9pt; fill: var(--ink); }
+
+  section { margin-top: 6.5pt; }
+  h2 {
+    font-size: 10.5pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    border-bottom: 1.2px solid var(--line); padding-bottom: 1.5pt; margin-bottom: 4pt; break-after: avoid;
+  }
+  p { text-align: left; }
+
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 3pt 18pt; }
+  .skills b { font-weight: 600; }
+
+  .item { margin-top: 6pt; break-inside: avoid; }
+  .item:first-of-type { margin-top: 0; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .item-title { font-weight: 700; font-size: 10pt; }
+  .item-title a::after { content: " \2197"; font-weight: 400; font-size: 8.5pt; color: var(--accent); }
+  .item-meta { font-size: 9pt; color: var(--muted); white-space: nowrap; }
+  .stack { font-size: 9.2pt; color: var(--muted); margin: 1pt 0 1.5pt; }
+  .stack i { color: var(--ink); }
+  ul { padding-left: 11pt; }
+  li { margin-top: 1pt; }
+  li::marker { font-size: 8pt; }
+  li b, p b { font-weight: 600; }
+
+  .row { display: grid; grid-template-columns: 82pt 1fr; gap: 10pt; margin-top: 6pt; break-inside: avoid; }
+  .row:first-of-type { margin-top: 0; }
+  .row .when { font-size: 9.2pt; }
+  .row .where { font-size: 9pt; color: var(--muted); }
+  .row .org { font-style: italic; color: var(--muted); }
+  .ar { font-family: "Noto Sans Arabic", sans-serif; font-size: 8.6pt; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ameen Mohamed</h1>
+  <div class="role">Frontend Engineer (Vue / Nuxt) · Full-Stack with NestJS &amp; Laravel</div>
+  <div class="contact">
+    <a href="mailto:ameeenmv@gmail.com"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg>ameeenmv@gmail.com</a>
+    <a href="tel:01017025076"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>01017025076</a>
+    <span><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Egypt - Mansoura</span>
+    <a href="https://linkedin.com/in/ameenmv"><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3zm4 7v7h2.3v-7zm1.1-3.6a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6zM11 10v7h2.3v-3.6c0-1 .2-1.9 1.4-1.9s1.2 1.1 1.2 2V17H18v-4c0-2-.4-3.4-2.7-3.4-1.1 0-1.8.6-2.1 1.1V10z"/></svg>LinkedIn</a>
+    <a href="https://github.com/ameenmv"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+    <a href="https://ameeen.me/"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-3a15.6 15.6 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8 8 0 0 1 0-4h3.4a16 16 0 0 0 0 4zm.8 2h3a15.6 15.6 0 0 0 1.4 3.6A8 8 0 0 1 5.1 16zm3-8h-3a8 8 0 0 1 4.4-3.6C8.9 5.5 8.4 6.7 8.1 8zM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4zm.2 5.6c.6-1.1 1.1-2.3 1.4-3.6h3a8 8 0 0 1-4.4 3.6zm1.8-5.6a16 16 0 0 0 0-4h3.4a8 8 0 0 1 0 4z"/></svg>Portfolio</a>
+    <a href="https://www.youtube.com/@ameeen_mv"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube</a>
+    <a href="https://www.npmjs.com/~ameeen_mv"><svg viewBox="0 0 24 24"><path d="M2 7h20v9h-10v1.5H8V16H2zm2 2v5h2v-3.5h1.5V14H8V9zm6 0v6.5h2.5V14H15V9zm2.5 1.5h1v2h-1zM16 9v5h2v-3.5h1V14h1v-3.5h1V14h1V9z"/></svg>npm</a>
+  </div>
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p>Frontend engineer focused on Vue.js and Nuxt.js (also React.js and Next.js). I build admin dashboards, e-commerce stores and real-time platforms, and ship full-stack products end to end with NestJS, Laravel, PostgreSQL and MongoDB. <b>I mentor 150+ developers</b> across two student communities and make technical videos on YouTube.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><b>Frontend Core:</b> Vue.js, Nuxt.js, React.js, Next.js, TypeScript, JavaScript (ES6+), Pinia, Vue Router, TanStack Query, Zod.</div>
+    <div><b>UI &amp; Styling:</b> Tailwind CSS, shadcn-vue / Reka UI, Nuxt UI, Vuetify, PrimeVue, SASS, GSAP, Three.js.</div>
+    <div><b>Backend &amp; Databases:</b> Node.js, NestJS, Prisma, PHP, Laravel, RESTful APIs, PostgreSQL, MySQL, MongoDB.</div>
+    <div><b>Tools &amp; Architecture:</b> Git, GitHub Actions, Docker, Turborepo, Vitest, Playwright, WebSockets, i18n (RTL/LTR).</div>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+  <div class="row">
+    <div><div class="when">12/2025 – Present</div><div class="where">Mansoura</div></div>
+    <div>
+      <div class="item-title">Frontend Developer <span class="org">· neop</span></div>
+      <ul>
+        <li>Shipped 15+ production applications, from admin dashboards to landing pages, with Vue.js, Nuxt.js, Pinia, reusable components and GSAP animations.</li>
+        <li>Led the redesign of the Masra logistics platform's admin, transporter and shipper apps, and contributed Laravel backend features (dispatch, sub-accounts, PDF documents, notifications).</li>
+        <li>Set up cache-busting and automated deploys (Git webhooks, PM2, GitHub Actions on RunCloud) for zero-downtime releases.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div><div class="when">10/2025 – 12/2025</div><div class="where">Mansoura</div></div>
+    <div>
+      <div class="item-title">Frontend Developer <span class="org">· Azzrk - <span class="ar">أزرق</span></span></div>
+      <ul>
+        <li>Built and launched 4 custom e-commerce storefronts on Salla with Twig, Tailwind CSS and JavaScript.</li>
+        <li>Built a shared UI component library that sped up theme delivery and kept every client store consistent.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div><div class="when">07/2025 – 08/2025</div><div class="where">Remote</div></div>
+    <div>
+      <div class="item-title">PHP Back End Developer Intern <span class="org">· Information Technology Institute (ITI)</span></div>
+      <ul>
+        <li>Built authenticated RESTful APIs in PHP / Laravel with a clean relational database design.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="item">
+    <div class="item-head"><div class="item-title">Mohamed Serag | Full-Stack E-commerce Platform (Freelance)</div></div>
+    <div class="stack"><i>Tech Stack:</i> Nuxt 4, Vue 3, NestJS, PostgreSQL, Prisma, Tailwind CSS 4, shadcn-vue, Zod, Three.js, GSAP, Docker, Turborepo</div>
+    <ul>
+      <li>Built <b>solo, end to end</b>, an Arabic-first (RTL) online store and admin dashboard for a family-run home-appliance showroom in Mansoura, as a Turborepo monorepo: Nuxt 4 SSR storefront, NestJS REST API and shared Zod schemas used by both (<b>280+ commits, 28 specced features</b>).</li>
+      <li>Designed checkout around how Egyptians buy: guest checkout, cash on delivery, InstaPay and Vodafone Cash, a shipping-fee or deposit-first flow, and <b>one-tap payment confirmation</b> for the owner through signed links, with WhatsApp order alerts via a self-hosted gateway and transactional emails.</li>
+      <li>Built <b>Arabic-aware search</b> on PostgreSQL trigram matching (letter folding, Arabic-Indic digits, synonyms), URL-synced filters, a compare page, flash sales and coupons, and a Three.js + GSAP 3D product story on the home page.</li>
+      <li>Shipped a full admin dashboard: orders, payments and stock, product spec templates with CSV import and auto-generated SEO, a site editor with draft / preview / publish and version history, reports with charts and CSV export, and a command palette.</li>
+      <li>Secured it with session auth + CSRF, a permission guard on every endpoint, an audit log, argon2 passwords with lockout and one-time email codes; covered by <b>860+ automated tests</b> (Vitest, Playwright e2e, Lighthouse CI) and shipped with Docker Compose + Caddy.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head"><div class="item-title"><a href="https://saaf.com.sa">SAAF | Enterprise Fintech Ecosystem</a></div></div>
+    <div class="stack"><i>Tech Stack:</i> Vue 3, Nuxt.js, Pinia, Pusher, Laravel Echo, WebSockets, Chart.js, SSR</div>
+    <ul>
+      <li>Built the frontend of an enterprise fintech platform: 840+ views and 1,180+ reusable UI components, with state split into 33 persistent Pinia stores to keep the UI fast.</li>
+      <li>Built a two-tier role-based access control (RBAC) system for the Superadmin Dashboard, guarding routes and individual UI elements around sensitive financial operations.</li>
+      <li>Replaced HTTP polling with a WebSocket layer (Pusher / Laravel Echo in a custom Vue composable), so live orders and wallets update in under a second.</li>
+      <li>Shipped the Nuxt marketing site with full SSR, compression and lightweight scroll animations, scoring near-perfect Core Web Vitals.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head"><div class="item-title"><a href="https://masra.app/">Masra | Saudi Freight &amp; Logistics Platform (neop)</a></div></div>
+    <div class="stack"><i>Tech Stack:</i> Vue 3, Pinia, Reka UI, Nuxt 3, Tailwind CSS, Laravel 11, MySQL, Pusher, mPDF, i18n (AR / EN / UR)</div>
+    <ul>
+      <li>Led the <b>full redesign of the admin and transporter-company dashboards</b> (100+ Vue views): trips, order details, a live tracking road, drivers, wallet and invoices, support tickets, settings, admins and role permissions, all in RTL / LTR.</li>
+      <li>Built a shared dashboard component kit (searchable selects, date and time pickers, paginated tables, KPI cards, status pills, Saudi plate and Riyal symbol components) that unified the look of every page.</li>
+      <li>Redesigned the shipper web app in Nuxt 3 and shipped <b>real-time order distribution</b> among approved transporters, with live dispatch status, decline handling and truck re-distribution, plus employee sub-accounts and Urdu as a third language.</li>
+      <li>Extended the Laravel API with direct dispatch, approved-transporter rules and backend notification filtering, and produced the Saudi road <b>waybill and purchase bill PDFs with signed QR codes</b> and a public verification page, plus branded emails sent in each recipient's language.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head"><div class="item-title"><a href="https://haze-clue-website.vercel.app/">Haze Clue | Real-Time BCI Platform (Graduation Project)</a></div></div>
+    <div class="stack"><i>Tech Stack:</i> Nuxt 4, NestJS, MongoDB, Socket.IO, Tailwind CSS, Pinia, Chart.js, i18n</div>
+    <ul>
+      <li>Built a full-stack real-time platform that reads live EEG streams from BCI headsets, so instructors can follow every student's attention level at once.</li>
+      <li>Wrote the NestJS API: JWT / OTP authentication, the MongoDB schema, and WebSocket broadcasting with sub-second latency.</li>
+      <li>Shipped a bilingual (RTL / LTR) Nuxt 4 frontend with live analytics dashboards.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head"><div class="item-title"><a href="https://smart-learn-dusky.vercel.app/">Smart Learn | Educational Platform (Freelance)</a></div></div>
+    <div class="stack"><i>Tech Stack:</i> Vue 3, Tailwind CSS, PrimeVue, Pinia, Axios, Zod, Vite</div>
+    <ul>
+      <li>Built role-based dashboards for instructors (courses, quizzes) and students (submissions, certificates).</li>
+      <li>Validated every multi-step form with Zod schemas, cutting invalid submissions and backend rejections.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Open Source &amp; Tools</h2>
+  <div class="item">
+    <div class="item-title"><a href="https://www.npmjs.com/package/sa5er-cli">Sa5er CLI (Sarcastic Egyptian Senior Dev) | NPM Package</a></div>
+    <div class="stack"><i>Tech Stack:</i> Node.js, Terminal APIs, Gemini / Grok AI, Local Caching</div>
+    <ul>
+      <li>Built and published an AI-powered CLI on npm that catches terminal errors and explains the fix in context.</li>
+      <li>Designed a 3-tier error resolution flow with a local cache, so repeated errors are answered instantly without an API call.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="item-title">Athar (Local-First MCP Server) | Open Source NPM Package</div>
+    <div class="stack"><i>Tech Stack:</i> Node.js, Nuxt 4, SQLite, MCP, AI Protocols</div>
+    <ul>
+      <li>Built a local-first MCP server that saves the bug fixes an AI assistant finds and turns them into a personal developer knowledge base.</li>
+      <li>Added a Nuxt 4 dashboard and SM-2 spaced repetition on a local SQLite database to review past fixes.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Volunteering &amp; Content</h2>
+  <div class="row">
+    <div><div class="when">10/2025 – Present</div></div>
+    <div>
+      <div class="item-title">Frontend Tech Lead &amp; Mentor <span class="org">· CIS Team &amp; CAT Reloaded</span></div>
+      <ul>
+        <li>Lead the frontend circles of two student tech communities, mentoring 150+ members through a modern web roadmap.</li>
+        <li>Review weekly tasks and code, with feedback on clean code and architecture.</li>
+        <li>Wrote and taught a 6-session frontend crash course for beginners (Technical Gates VI).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div><div class="when">Ongoing</div></div>
+    <div>
+      <div class="item-title"><a href="https://www.youtube.com/@ameeen_mv">Technical Content Creator <span class="org">· YouTube (Coding with Ameen)</span></a></div>
+      <ul><li>Make videos on JavaScript engine internals, browser rendering and frontend architecture.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="row">
+    <div><div class="when">10/2023 – 2026</div><div class="where">Graduated</div></div>
+    <div>
+      <div class="item-title">B.Sc. in Computer &amp; Information Sciences · Mansoura University <span class="org">(transferred from Beni-Suef University)</span></div>
+      <ul><li>Software Engineering, Algorithms, Databases, AI and Web Development; built projects with Vue.js, Laravel and SQL.</li></ul>
+    </div>
+  </div>
+  <div class="row">
+    <div><div class="when">10/2022 – 06/2023</div></div>
+    <div>
+      <div class="item-title">Faculty of Computer &amp; Artificial Intelligence - Beni-Suef University</div>
+      <ul><li>Built a foundation in programming, math and computer systems using C++ and OOP.</li></ul>
+    </div>
+  </div>
+</section>
+</body>
+</html>
