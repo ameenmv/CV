@@ -51,6 +51,9 @@
   li::marker { font-size: 8pt; }
   li b, p b { font-weight: 600; }
 
+  .sub { margin-top: 4pt; }
+  .sub-title { font-weight: 600; font-size: 9.6pt; }
+  .sub-title a::after { content: " \2197"; font-weight: 400; font-size: 8.5pt; color: var(--accent); }
   .row { display: grid; grid-template-columns: 82pt 1fr; gap: 10pt; margin-top: 6pt; break-inside: avoid; }
   .row:first-of-type { margin-top: 0; }
   .row .when { font-size: 9.2pt; }
@@ -98,9 +101,28 @@
       <div class="item-title">Frontend Developer <span class="org">· neop</span></div>
       <ul>
         <li>Shipped 15+ production applications, from admin dashboards to landing pages, with Vue.js, Nuxt.js, Pinia, reusable components and GSAP animations.</li>
-        <li>Led the redesign of the Masra logistics platform's admin, transporter and shipper apps, and contributed Laravel backend features (dispatch, sub-accounts, PDF documents, notifications).</li>
         <li>Set up cache-busting and automated deploys (Git webhooks, PM2, GitHub Actions on RunCloud) for zero-downtime releases.</li>
       </ul>
+      <div class="sub">
+        <div class="sub-title">Key project · <a href="https://saaf.com.sa">SAAF | Enterprise Fintech Ecosystem</a></div>
+      <div class="stack"><i>Tech Stack:</i> Vue 3, Nuxt.js, Pinia, Pusher, Laravel Echo, WebSockets, Chart.js, SSR</div>
+      <ul>
+      <li>Built the frontend of an enterprise fintech platform: 840+ views and 1,180+ reusable UI components, with state split into 33 persistent Pinia stores to keep the UI fast.</li>
+      <li>Built a two-tier role-based access control (RBAC) system for the Superadmin Dashboard, guarding routes and individual UI elements around sensitive financial operations.</li>
+      <li>Replaced HTTP polling with a WebSocket layer (Pusher / Laravel Echo in a custom Vue composable), so live orders and wallets update in under a second.</li>
+      <li>Shipped the Nuxt marketing site with full SSR, compression and lightweight scroll animations, scoring near-perfect Core Web Vitals.</li>
+      </ul>
+      </div>
+      <div class="sub">
+        <div class="sub-title">Key project · <a href="https://masra.app/">Masra | Saudi Freight &amp; Logistics Platform</a></div>
+      <div class="stack"><i>Tech Stack:</i> Vue 3, Pinia, Reka UI, Nuxt 3, Tailwind CSS, Laravel 11, MySQL, Pusher, mPDF, i18n (AR / EN / UR)</div>
+      <ul>
+      <li>Led the <b>full redesign of the admin and transporter-company dashboards</b> (100+ Vue views): trips, order details, a live tracking road, drivers, wallet and invoices, support tickets, settings, admins and role permissions, all in RTL / LTR.</li>
+      <li>Built a shared dashboard component kit (searchable selects, date and time pickers, paginated tables, KPI cards, status pills, Saudi plate and Riyal symbol components) that unified the look of every page.</li>
+      <li>Redesigned the shipper web app in Nuxt 3 and shipped <b>real-time order distribution</b> among approved transporters, with live dispatch status, decline handling and truck re-distribution, plus employee sub-accounts and Urdu as a third language.</li>
+      <li>Extended the Laravel API with direct dispatch, approved-transporter rules and backend notification filtering, and produced the Saudi road <b>waybill and purchase bill PDFs with signed QR codes</b> and a public verification page, plus branded emails sent in each recipient's language.</li>
+      </ul>
+      </div>
     </div>
   </div>
   <div class="row">
@@ -136,28 +158,6 @@
       <li>Built <b>Arabic-aware search</b> on PostgreSQL trigram matching (letter folding, Arabic-Indic digits, synonyms), URL-synced filters, a compare page, flash sales and coupons, and a Three.js + GSAP 3D product story on the home page.</li>
       <li>Shipped a full admin dashboard: orders, payments and stock, product spec templates with CSV import and auto-generated SEO, a site editor with draft / preview / publish and version history, reports with charts and CSV export, and a command palette.</li>
       <li>Secured it with session auth + CSRF, a permission guard on every endpoint, an audit log, argon2 passwords with lockout and one-time email codes; covered by <b>860+ automated tests</b> (Vitest, Playwright e2e, Lighthouse CI) and shipped with Docker Compose + Caddy.</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <div class="item-head"><div class="item-title"><a href="https://saaf.com.sa">SAAF | Enterprise Fintech Ecosystem</a></div></div>
-    <div class="stack"><i>Tech Stack:</i> Vue 3, Nuxt.js, Pinia, Pusher, Laravel Echo, WebSockets, Chart.js, SSR</div>
-    <ul>
-      <li>Built the frontend of an enterprise fintech platform: 840+ views and 1,180+ reusable UI components, with state split into 33 persistent Pinia stores to keep the UI fast.</li>
-      <li>Built a two-tier role-based access control (RBAC) system for the Superadmin Dashboard, guarding routes and individual UI elements around sensitive financial operations.</li>
-      <li>Replaced HTTP polling with a WebSocket layer (Pusher / Laravel Echo in a custom Vue composable), so live orders and wallets update in under a second.</li>
-      <li>Shipped the Nuxt marketing site with full SSR, compression and lightweight scroll animations, scoring near-perfect Core Web Vitals.</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <div class="item-head"><div class="item-title"><a href="https://masra.app/">Masra | Saudi Freight &amp; Logistics Platform (neop)</a></div></div>
-    <div class="stack"><i>Tech Stack:</i> Vue 3, Pinia, Reka UI, Nuxt 3, Tailwind CSS, Laravel 11, MySQL, Pusher, mPDF, i18n (AR / EN / UR)</div>
-    <ul>
-      <li>Led the <b>full redesign of the admin and transporter-company dashboards</b> (100+ Vue views): trips, order details, a live tracking road, drivers, wallet and invoices, support tickets, settings, admins and role permissions, all in RTL / LTR.</li>
-      <li>Built a shared dashboard component kit (searchable selects, date and time pickers, paginated tables, KPI cards, status pills, Saudi plate and Riyal symbol components) that unified the look of every page.</li>
-      <li>Redesigned the shipper web app in Nuxt 3 and shipped <b>real-time order distribution</b> among approved transporters, with live dispatch status, decline handling and truck re-distribution, plus employee sub-accounts and Urdu as a third language.</li>
-      <li>Extended the Laravel API with direct dispatch, approved-transporter rules and backend notification filtering, and produced the Saudi road <b>waybill and purchase bill PDFs with signed QR codes</b> and a public verification page, plus branded emails sent in each recipient's language.</li>
     </ul>
   </div>
 
